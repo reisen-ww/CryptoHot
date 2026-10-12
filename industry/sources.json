@@ -1,0 +1,656 @@
+{
+  "$comment": "示范信源：首次启动时导入（scripts/seed.ts），已存在的不会被覆盖。之后在后台“信源”里新建、修改和暂停。字段说明见 docs/customize.md。",
+  "sources": [
+    {
+      "id": "fin-panews",
+      "name": "PANews",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.panewslab.com/rss.xml?lang=zh&type=NEWS",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "panews",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "媒体",
+        "中文"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-chaincatcher",
+      "name": "链捕手 ChainCatcher",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.chaincatcher.com/rss.xml",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "chaincatcher",
+      "participation_mode": "editorial",
+      "interval_minutes": 30,
+      "tags": [
+        "媒体",
+        "中文"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-coindesk",
+      "name": "CoinDesk",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.coindesk.com/arc/outboundfeeds/rss/",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "coindesk",
+      "participation_mode": "editorial",
+      "interval_minutes": 30,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-theblock",
+      "name": "The Block",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.theblock.co/rss.xml",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "theblock",
+      "participation_mode": "editorial",
+      "interval_minutes": 30,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-cointelegraph",
+      "name": "Cointelegraph",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://cointelegraph.com/rss",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": "cointelegraph",
+      "participation_mode": "editorial",
+      "interval_minutes": 30,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-decrypt",
+      "name": "Decrypt",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://decrypt.co/feed",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": "decrypt",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-blockworks",
+      "name": "Blockworks",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://blockworks.co/feed",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "blockworks",
+      "participation_mode": "editorial",
+      "interval_minutes": 30,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-thedefiant",
+      "name": "The Defiant",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://thedefiant.io/api/feed",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": "thedefiant",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-bitcoinmagazine",
+      "name": "Bitcoin Magazine",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://bitcoinmagazine.com/feed",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": "bitcoinmagazine",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-ethresearch",
+      "name": "Ethereum Research",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://ethresear.ch/posts.rss",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": "ethereum",
+      "participation_mode": "editorial",
+      "interval_minutes": 360,
+      "tags": [
+        "研究",
+        "官方"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-flashbots",
+      "name": "Flashbots",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://writings.flashbots.net/rss.xml",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": "flashbots",
+      "participation_mode": "editorial",
+      "interval_minutes": 720,
+      "tags": [
+        "研究"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-sec-press",
+      "name": "SEC 新闻稿",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.sec.gov/news/pressreleases.rss",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "sec",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "官方",
+        "监管"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-sec-edgar-8k",
+      "name": "SEC EDGAR 最新申报",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=8-K&company=&dateb=&owner=include&count=20&output=atom",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "sec",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "官方",
+        "监管"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-cnbc-top",
+      "name": "CNBC Top News",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "cnbc",
+      "participation_mode": "editorial",
+      "interval_minutes": 30,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-cnbc-markets",
+      "name": "CNBC Markets",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "cnbc",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-bloomberg-markets",
+      "name": "Bloomberg Markets",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://feeds.bloomberg.com/markets/news.rss",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "bloomberg",
+      "participation_mode": "editorial",
+      "interval_minutes": 30,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-ft-home",
+      "name": "Financial Times",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.ft.com/rss/home",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "ft",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-seekingalpha",
+      "name": "Seeking Alpha",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://seekingalpha.com/feed.xml",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": "seekingalpha",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-fed-press",
+      "name": "美联储新闻稿",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.federalreserve.gov/feeds/press_all.xml",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "fed",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "官方"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-ecb-press",
+      "name": "欧洲央行新闻",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.ecb.europa.eu/rss/press.html",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": "ecb",
+      "participation_mode": "editorial",
+      "interval_minutes": 360,
+      "tags": [
+        "官方"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-marketwatch-top",
+      "name": "MarketWatch Top Stories",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": "marketwatch",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-wallstreetcn",
+      "name": "华尔街见闻",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://dedicated.wallstreetcn.com/rss.xml",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "wallstreetcn",
+      "participation_mode": "editorial",
+      "interval_minutes": 30,
+      "tags": [
+        "媒体",
+        "中文"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-stats-gov-cn",
+      "name": "国家统计局",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.stats.gov.cn/sj/zxfb/rss.xml",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "stats-cn",
+      "participation_mode": "editorial",
+      "interval_minutes": 360,
+      "tags": [
+        "官方",
+        "中文"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-jiemian",
+      "name": "界面新闻",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://a.jiemian.com/index.php?m=article&a=rss",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": "jiemian",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "媒体",
+        "中文"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-tmtpost",
+      "name": "钛媒体",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://www.tmtpost.com/rss.xml",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": "tmtpost",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "媒体",
+        "中文"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-eeo",
+      "name": "经济观察网",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "http://www.eeo.com.cn/rss.xml",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": "eeo",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "媒体",
+        "中文"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-eastmoney",
+      "name": "东方财富",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "http://rss.eastmoney.com/rss_partener.xml",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": "eastmoney",
+      "participation_mode": "editorial",
+      "interval_minutes": 60,
+      "tags": [
+        "媒体",
+        "中文"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-cryptoslate",
+      "name": "CryptoSlate",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://cryptoslate.com/feed/",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T3",
+      "owner_entity_id": "cryptoslate",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-protos",
+      "name": "Protos",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://protos.com/feed/",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T3",
+      "owner_entity_id": "protos",
+      "participation_mode": "editorial",
+      "interval_minutes": 360,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-unchained",
+      "name": "Unchained",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://unchainedcrypto.com/feed/",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": "unchained",
+      "participation_mode": "editorial",
+      "interval_minutes": 360,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-cryptobriefing",
+      "name": "Crypto Briefing",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://cryptobriefing.com/feed/",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T3",
+      "owner_entity_id": "cryptobriefing",
+      "participation_mode": "editorial",
+      "interval_minutes": 120,
+      "tags": [
+        "媒体"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    },
+    {
+      "id": "fin-bea",
+      "name": "BEA 经济数据",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://apps.bea.gov/rss/rss.xml",
+        "_aihot": {
+          "initialBackfillLimit": 8
+        }
+      },
+      "tier": "T2",
+      "owner_entity_id": "bea",
+      "participation_mode": "editorial",
+      "interval_minutes": 720,
+      "tags": [
+        "官方"
+      ],
+      "site_fulltext": false,
+      "syndicate_fulltext": false
+    }
+  ]
+}

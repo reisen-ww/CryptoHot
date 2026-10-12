@@ -1,0 +1,282 @@
+{
+  "groups": [
+    {
+      "key": "company",
+      "name": "机构与公司",
+      "blurb": "按机构追踪交易所、上市公司与监管部门的动态"
+    },
+    {
+      "key": "field",
+      "name": "市场方向",
+      "blurb": "按领域深挖：稳定币、ETF、DeFi、利率、半导体……"
+    },
+    {
+      "key": "genre",
+      "name": "内容形态",
+      "blurb": "按内容类型浏览：行情、财报、监管、融资、研究……"
+    }
+  ],
+  "topics": [
+    {
+      "slug": "bitcoin",
+      "name": "比特币 / BTC",
+      "group": "company",
+      "entityId": "bitcoin",
+      "definition": "比特币的全部动态：价格与资金流、链上数据、ETF 持仓、矿工与网络升级、各国储备与立法讨论。"
+    },
+    {
+      "slug": "ethereum",
+      "name": "以太坊 / ETH",
+      "group": "company",
+      "entityId": "ethereum",
+      "definition": "以太坊的全部动态：协议升级、质押与再质押、Layer2 生态、基金会路线与 ETH 价格资金面。"
+    },
+    {
+      "slug": "solana",
+      "name": "Solana",
+      "group": "company",
+      "entityId": "solana",
+      "definition": "Solana 生态的进展：网络性能与停机事故、生态项目、机构持仓与 ETF 进展。"
+    },
+    {
+      "slug": "ripple",
+      "name": "Ripple / XRP",
+      "group": "company",
+      "entityId": "ripple",
+      "definition": "Ripple 与 XRP 的进展：与监管机构的诉讼、跨境支付合作、稳定币与 ETF 相关动态。"
+    },
+    {
+      "slug": "binance",
+      "name": "Binance / 币安",
+      "group": "company",
+      "entityId": "binance",
+      "definition": "Binance 的持续追踪：合规与牌照、上币与产品调整、创始人相关案件和 BNB 生态。"
+    },
+    {
+      "slug": "coinbase",
+      "name": "Coinbase",
+      "group": "company",
+      "entityId": "coinbase",
+      "definition": "Coinbase 的全部动态：财报与收入结构、上币与托管业务、监管诉讼与国际化进展。"
+    },
+    {
+      "slug": "blackrock",
+      "name": "BlackRock / 贝莱德",
+      "group": "company",
+      "entityId": "blackrock",
+      "definition": "贝莱德的加密与市场动作：比特币和以太坊 ETF 的资金流、代币化基金与机构配置观点。"
+    },
+    {
+      "slug": "microstrategy",
+      "name": "MicroStrategy / Strategy",
+      "group": "company",
+      "entityId": "microstrategy",
+      "definition": "MicroStrategy（Strategy）的持续追踪：比特币持仓与融资买入、可转债与股价的联动。"
+    },
+    {
+      "slug": "sec",
+      "name": "SEC / 美国证监会",
+      "group": "company",
+      "entityId": "sec",
+      "aliases": ["美国证券交易委员会", "美证监会"],
+      "definition": "美国证监会的加密与证券监管动作：执法诉讼、ETF 审批、规则制定与委员表态的持续追踪。"
+    },
+    {
+      "slug": "fed",
+      "name": "美联储 / Fed",
+      "group": "company",
+      "entityId": "fed",
+      "aliases": ["FOMC"],
+      "definition": "美联储的全部动态：议息决议、点阵图与经济预测、官员讲话、缩表与流动性工具。"
+    },
+    {
+      "slug": "nvidia",
+      "name": "NVIDIA / 英伟达",
+      "group": "company",
+      "entityId": "nvidia",
+      "definition": "英伟达的持续追踪：财报与指引、GPU 供需与出口管制、AI 资本开支对科技股与加密算力的影响。"
+    },
+    {
+      "slug": "tesla",
+      "name": "Tesla / 特斯拉",
+      "group": "company",
+      "entityId": "tesla",
+      "definition": "特斯拉的全部动态：交付与财报、自动驾驶与新车进展、比特币持仓与马斯克相关表态。"
+    },
+    {
+      "slug": "apple",
+      "name": "Apple / 苹果",
+      "group": "company",
+      "entityId": "apple",
+      "definition": "苹果的持续追踪：财报与硬件发布、服务业务与监管诉讼、市值与科技股资金面。"
+    },
+    {
+      "slug": "microsoft",
+      "name": "Microsoft / 微软",
+      "group": "company",
+      "entityId": "microsoft",
+      "definition": "微软的持续追踪：云与 AI 资本开支、财报指引、反垄断调查与科技股估值讨论。"
+    },
+    {
+      "slug": "stablecoin",
+      "name": "稳定币",
+      "group": "field",
+      "tags": ["稳定币"],
+      "definition": "稳定币的监管、发行与使用：USDT 与 USDC 的储备与流通、支付场景、脱锚事件和各国立法。"
+    },
+    {
+      "slug": "etf",
+      "name": "加密 ETF",
+      "group": "field",
+      "tags": ["ETF"],
+      "definition": "加密 ETF 的审批与资金流：现货与衍生品产品、机构配置、申赎与溢价折价的变化。"
+    },
+    {
+      "slug": "defi",
+      "name": "DeFi 与链上",
+      "group": "field",
+      "tags": ["DeFi"],
+      "definition": "DeFi 协议与链上活动：借贷与交易量、协议收入与治理、黑客攻击与审计的进展。"
+    },
+    {
+      "slug": "layer2",
+      "name": "Layer2 与扩容",
+      "group": "field",
+      "tags": ["Layer2"],
+      "definition": "扩容路线的进展：Rollup 竞争、费用与排序器去中心化、跨链桥与互操作方案。"
+    },
+    {
+      "slug": "exchanges",
+      "name": "交易所",
+      "group": "field",
+      "tags": ["交易所"],
+      "definition": "中心化交易所的经营与合规：交易量与上新、储备证明、牌照与退出市场、被盗与赔付。"
+    },
+    {
+      "slug": "rates",
+      "name": "利率与流动性",
+      "group": "field",
+      "tags": ["利率", "美联储"],
+      "definition": "利率路径与流动性环境：美债收益率、降息预期、逆回购与准备金、对风险资产的影响。"
+    },
+    {
+      "slug": "inflation",
+      "name": "通胀与就业",
+      "group": "field",
+      "tags": ["通胀"],
+      "definition": "通胀与就业数据及其市场影响：CPI、PCE、非农与失业率，以及数据公布后的资产反应。"
+    },
+    {
+      "slug": "semiconductor",
+      "name": "半导体",
+      "group": "field",
+      "tags": ["半导体"],
+      "definition": "半导体产业链动态：算力芯片与先进制程、代工与设备、出口管制与板块行情。"
+    },
+    {
+      "slug": "china-adr",
+      "name": "中概股",
+      "group": "field",
+      "tags": ["中概股"],
+      "definition": "中概股的行情与治理：财报与回购、退市与审计争议、平台经济政策的影响。"
+    },
+    {
+      "slug": "hongkong",
+      "name": "港股",
+      "group": "field",
+      "tags": ["港股"],
+      "definition": "港股市场动态：恒指与南向资金、新股发行与破发、港交所规则与虚拟资产牌照。"
+    },
+    {
+      "slug": "cny",
+      "name": "人民币汇率",
+      "group": "field",
+      "tags": ["人民币汇率"],
+      "definition": "人民币汇率的走向与政策：中间价与离岸价、结售汇与跨境资金、对出口和资产价格的影响。"
+    },
+    {
+      "slug": "commodities",
+      "name": "大宗商品",
+      "group": "field",
+      "tags": ["大宗商品"],
+      "definition": "大宗商品与避险资产：黄金与原油、供需与库存、地缘冲击下的资金流向。"
+    },
+    {
+      "slug": "crypto-market",
+      "name": "行情异动",
+      "group": "field",
+      "tags": ["行情异动", "比特币", "以太坊"],
+      "definition": "市场层面的剧烈变化：主流币暴涨暴跌、杠杆清算与爆仓、资金费率与市场情绪。"
+    },
+    {
+      "slug": "security",
+      "name": "安全事件",
+      "group": "field",
+      "tags": ["安全事件"],
+      "definition": "行业安全事故与应对：交易所与协议被盗、私钥泄露、脱锚与挤兑、审计与追赃进展。"
+    },
+    {
+      "slug": "funding",
+      "name": "融资与并购",
+      "group": "genre",
+      "tags": ["融资", "并购"],
+      "definition": "一级市场与整合：融资与估值、代币发行与空投、并购重组与战略合作的公告。"
+    },
+    {
+      "slug": "regulation",
+      "name": "监管与政策",
+      "group": "genre",
+      "tags": ["监管处罚", "政策发布"],
+      "definition": "规则层面的变化：立法与法案、牌照与执法、税收与合规要求，以及行业游说与回应。"
+    },
+    {
+      "slug": "earnings",
+      "name": "财报",
+      "group": "genre",
+      "tags": ["财报"],
+      "definition": "上市公司财报与指引：营收与利润、业务结构变化、电话会表态与股价反应。"
+    },
+    {
+      "slug": "data",
+      "name": "数据发布",
+      "group": "genre",
+      "tags": ["数据发布"],
+      "definition": "关键数据的公布与解读：经济数据、链上指标、资金流与持仓报告、平台经营数据。"
+    },
+    {
+      "slug": "research",
+      "name": "研究报告",
+      "group": "genre",
+      "tags": ["研究报告"],
+      "definition": "机构与个人的研究输出：行业深度报告、链上与量化分析、估值模型和预测。"
+    },
+    {
+      "slug": "bankruptcy",
+      "name": "破产与清算",
+      "group": "genre",
+      "tags": ["破产清算"],
+      "definition": "失败与重组：破产申请、资产清算与赔付、债权人回收、退市与业务关停。"
+    },
+    {
+      "slug": "speech",
+      "name": "讲话与会议",
+      "group": "genre",
+      "tags": ["会议讲话"],
+      "definition": "关键场合的表态：央行与监管官员讲话、听证会与发布会、行业大会上的重要宣布。"
+    },
+    {
+      "slug": "opinions",
+      "name": "观点",
+      "group": "genre",
+      "tags": ["研究报告", "会议讲话"],
+      "definition": "判断与争论：机构策略观点、名人预测、多空辩论与市场情绪的代表性看法。"
+    },
+    {
+      "slug": "howto",
+      "name": "教程与避坑",
+      "group": "genre",
+      "tags": ["数据发布", "研究报告"],
+      "definition": "可以照着做的内容：工具与产品用法、链上查询与风控方法、常见骗局与避坑经验。"
+    }
+  ]
+}
